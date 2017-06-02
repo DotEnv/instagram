@@ -45,7 +45,7 @@ trait LikesWS
 	}
 
 	/**
-	* Set a like on this media by the currently authenticated user.
+	* Like this media by the currently authenticated user.
 	* The public_content scope is required for media that does not belong to the owner of the access_token.
 	*
 	* @see https://www.instagram.com/developer/endpoints/likes/#post_likes
@@ -62,7 +62,7 @@ trait LikesWS
 	}
 
 	/**
-	* Set a like on this media by the currently authenticated user.
+	* Unlike this media by the currently authenticated user.
 	* The public_content scope is required for media that does not belong to the owner of the access_token.
 	*
 	* @see https://www.instagram.com/developer/endpoints/likes/#post_likes

@@ -35,7 +35,8 @@ trait MediaWS
 	private $mediaSearchUrl = 'media/search?lat=%s&lng=%s';
 
 	/**
-	* Get information about a media object. Use the type field to differentiate between image and video media in the response. 
+	* Get information about a media object. 
+	* Use the type field to differentiate between image and video media in the response. 
 	* You will also receive the user_has_liked *field which tells you whether the owner of the access_token has liked this media.
 	*
 	* The public_content permission scope is required to get a media that does not belong to the owner of the access_token.

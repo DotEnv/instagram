@@ -92,7 +92,8 @@ trait RelationshipsWS
 	}
 
 	/**
-	* Get information about a relationship to another user. Relationships are expressed using the following terms in the response:
+	* Get information about a relationship to another user. 
+	* Relationships are expressed using the following terms in the response:
 	*
 	* outgoing_status: Your relationship to the user. Can be 'follows', 'requested', 'none'.
 	* incoming_status: A user's relationship to you. Can be 'followed_by', 'requested_by', 'blocked_by_you', 'none'.
@@ -111,7 +112,8 @@ trait RelationshipsWS
 	}
 
 	/**
-	* Modify the relationship between the current user and the target user. You need to include an action parameter to specify the relationship action you want to perform. 
+	* Modify the relationship between the current user and the target user. 
+	* You need to include an action parameter to specify the relationship action you want to perform. 
 	* Valid actions are: 'follow', 'unfollow' 'approve' or 'ignore'. Relationships are expressed using the following terms in the response:
 	* outgoing_status: Your relationship to the user. Can be 'follows', 'requested', 'none'.
  	* incoming_status: A user's relationship to you. Can be 'followed_by', 'requested_by', 'blocked_by_you', 'none'.
