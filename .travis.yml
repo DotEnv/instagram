@@ -1,8 +1,7 @@
-
 language: php
 
 php:
-    - 5.4
+#    - 5.4
     - 5.5
     - 5.6
     - 7.0
@@ -11,14 +10,16 @@ php:
 
 sudo: false
 
-cache:
-  directories:
-    - $HOME/.composer/cache
+#cache:
+#  directories:
+#    - $HOME/.composer/cache
 
-before_script:
-    - travis_retry composer self-update
-    - travis_retry composer install --no-interaction --prefer-dist
-    - composer dump-autoload
+#before_script:
+#- travis_retry composer self-update
+install:
+    
+    - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+#    - composer dump-autoload
 
 script: 
     - vendor/phpunit/phpunit/phpunit tests/InstagramTest.php
