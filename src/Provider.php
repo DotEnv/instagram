@@ -18,7 +18,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 use Dotenv\Instagram\Exceptions\InvalidStateException;
 
