@@ -1,4 +1,4 @@
-# Exiges
+# Instagram
 
 A simple inspired by socialite library for laravel to authenticate users and obtain data from instagram api.
 
@@ -18,7 +18,6 @@ composer require dotenv/instagram
 ### 1 - Add the ServiceProvider in the app/config.php file.
 
 ```php
-
 Dotenv\Instagram\Providers\InstagramServiceProvider::class,
 
 ```
@@ -26,7 +25,6 @@ Dotenv\Instagram\Providers\InstagramServiceProvider::class,
 ### 2 - Register an alias in the app/config.php file.
 
 ```php
-
 'Instagram' => Dotenv\Instagram\Facades\Instagram::class,
 
 ```
@@ -34,7 +32,6 @@ Dotenv\Instagram\Providers\InstagramServiceProvider::class,
 ### 3 - How to use it?
 
 ```php
-
 <?php
 
 Route::get('auth/', function() {
