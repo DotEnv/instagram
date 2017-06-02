@@ -3,7 +3,7 @@
 	"description": "A simple inspired by socialite library for laravel to authenticate users and obtain data from instagram api.",
 	"type": "library",
 	"license": "MIT",
-	"keywords": ["php", "laravel", "oauth" "library", "dotenv", "instagram", "social", "social-media", "tiago-perrelli"],
+	"keywords": ["php", "laravel", "oauth", "library", "dotenv", "instagram", "social", "social-media", "tiago-perrelli"],
 	"authors": [
 		{
 			"name": "Tiago Perrelli",
@@ -32,4 +32,4 @@
 		}
 	},
 	"minimum-stability": "stable"
-}w
+}
