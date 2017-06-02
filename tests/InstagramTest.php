@@ -27,7 +27,6 @@ class InstagramTest extends PHPUnit_Framework_TestCase
         $response = $provider->authenticate();
 
         $this->assertInstanceOf('Symfony\Component\HttpFoundation\RedirectResponse', $response);
-        $this->assertInstanceOf('Illuminate\Http\RedirectResponse', $response);
         $this->assertSame('http://auth.url', $response->getTargetUrl());
 	}
 
