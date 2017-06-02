@@ -1,40 +1,37 @@
-#
-# language: php
-# 
-# php:
-#     - 5.4
-#     - 5.5
-#     - 5.6
-#     - 7.0
-#     - 7.1
-#     - hhvm
-
-# sudo: false
-
-# cache:
-#   directories:
-#     - $HOME/.composer/cache
-
-# before_script:
-#     - travis_retry composer self-update
-#     - travis_retry composer install --no-interaction --prefer-dist
-#     - composer dump-autoload
-
-# script: 
-#     - vendor/phpunit/phpunit/phpunit tests/ConversorTest.php
-#     - vendor/phpunit/phpunit/phpunit tests/ConversorWithFakerTest.php
-#     - vendor/phpunit/phpunit/phpunit tests/GeneratorTest.php
-
 
 language: php
 
 php:
-  - 5.6
-  - 7.0
-  - 7.1
+    - 5.4
+    - 5.5
+    - 5.6
+    - 7.0
+    - 7.1
+    - hhvm
 
 sudo: false
 
-install: travis_retry composer install --no-interaction --prefer-dist --no-suggest
+cache:
+  directories:
+    - $HOME/.composer/cache
 
-script: vendor/bin/phpunit --verbose
+before_script:
+    - travis_retry composer self-update
+    - travis_retry composer install --no-interaction --prefer-dist
+    - composer dump-autoload
+
+script: 
+    - vendor/phpunit/phpunit/phpunit tests/InstagramTest.php
+
+# language: php
+
+# php:
+#   - 5.6
+#   - 7.0
+#   - 7.1
+
+# sudo: false
+
+# install: travis_retry composer install --no-interaction --prefer-dist --no-suggest
+
+# script: vendor/bin/phpunit --verbose
