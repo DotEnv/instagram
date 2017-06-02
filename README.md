@@ -2,8 +2,8 @@
 
 A simple inspired by socialite library for laravel to authenticate users and obtain data from instagram api.
 
-[![Total Downloads](https://poser.pugx.org/dotenv/instagram/downloads.svg)](https://packagist.org/packages/dotenv/instagram)
-[![Latest Stable Version](https://poser.pugx.org/dotenv/instagram/v/stable.svg)](https://packagist.org/packages/dotenv/instagram)
+[![Total Downloads](https://poser.pugx.org/DotEnv/instagram/downloads.svg)](https://packagist.org/packages/dotenv/instagram)
+[![Latest Stable Version](https://poser.pugx.org/DotEnv/instagram/v/stable.svg)](https://packagist.org/packages/dotenv/instagram)
 [![Build Status](https://travis-ci.org/DotEnv/instagram.svg?branch=master)](https://travis-ci.org/DotEnv/instagram) 
 
 ### Installing
