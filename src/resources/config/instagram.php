@@ -11,9 +11,9 @@
 
 return [
 		
-	'client_id'     => 'b8504c3440d249b792784cd26723e4cf',
-	'client_secret' => '0c07d09bc3844c509f2c3d0923de275b',
-	'redirect'      => 'http://cupix.app',
+	'client_id'     => 'client_id',
+	'client_secret' => 'client_secret',
+	'redirect'      => 'http://redirect_url',
 
 	'scopes'		=> [
 
