@@ -48,6 +48,10 @@ Route::ge('auth/callback', function() {
 
 ```
 
+### 4 - Go to wiki to see the full documentation.
+
+[Wiki](https://github.com/DotEnv/instagram/wiki)
+
 ## License
 
 Instagram library is licensed under [The MIT License (MIT)] (https://github.com/dotenv/instagram/blob/master/LICENSE)(LICENSE).
