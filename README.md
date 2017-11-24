@@ -29,20 +29,23 @@ Dotenv\Instagram\Providers\InstagramServiceProvider::class,
 
 ```
 
-### 3 - Publishing config file
+### 3 - Rgister a facade alias in app/config.php file.
 
 ```php
 'Instagram' => Dotenv\Instagram\Facades\Instagram::class,
 
 ```
 
-### 4 - How to use it?
+### 4 - Publish config file.
 
 ```php
 php artisan vendor:publish --provider="dotenv\instagram"
 
-<?php
+```
 
+### 5 - How to use it?
+
+```php
 Route::get('auth/', function() {
 	
 	return \Instagram::authenticate();
@@ -57,7 +60,7 @@ Route::get('auth/callback', function() {
 
 ```
 
-### 5 - Go to wiki to see the full documentation.
+### 6 - Go to wiki to see the full documentation.
 
 [Wiki](https://github.com/DotEnv/instagram/wiki)
 
