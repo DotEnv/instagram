@@ -29,9 +29,18 @@ Dotenv\Instagram\Providers\InstagramServiceProvider::class,
 
 ```
 
-### 3 - How to use it?
+### 3 - Publishing config file
 
 ```php
+'Instagram' => Dotenv\Instagram\Facades\Instagram::class,
+
+```
+
+### 4 - How to use it?
+
+```php
+php artisan vendor:publish --provider="dotenv\instagram"
+
 <?php
 
 Route::get('auth/', function() {
@@ -39,7 +48,7 @@ Route::get('auth/', function() {
 	return \Instagram::authenticate();
 });
 
-Route::ge('auth/callback', function() {
+Route::get('auth/callback', function() {
 	
 	$user = \Instagram::retrieveUser();
 
@@ -48,7 +57,7 @@ Route::ge('auth/callback', function() {
 
 ```
 
-### 4 - Go to wiki to see the full documentation.
+### 5 - Go to wiki to see the full documentation.
 
 [Wiki](https://github.com/DotEnv/instagram/wiki)
 
